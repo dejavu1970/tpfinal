@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Vinyl&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*sidebar header*/
+header{
+    background-image: url(img/MPICHU2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    animation: fondo 60s infinite;
+    animation-delay: 3s;
+}
+@keyframes fondo{
+    20%{
+        background-image: url(img/MARAS1\ \(1\).jpg);
+        background-size: cover;
+    }
+    
+    40%{
+        background-image: url(img/CUZCO2.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(img/MPICHU1.webp);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(img/CUZCO1.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(img/MORAY1.jpg);
+        background-size: cover;
+    }
+}
+
+/*menu de navegacion*/
+.menu-bar{
+    text-align:center;
+    position: static;
+    
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    background:rgba(0, 0, 0, 0.3);
+}
+.menu-bar .logo{
+    margin-right: 500px;
+}
+.menu-bar ul li{
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menu-bar ul li:hover{
+    background:rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.menu-bar .material-symbols-outlined{
+    margin-right: 8px;
+    margin-left: 8px;
+    color: red;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a{
+    font-size: 1.2em;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: rgb(251, 251, 251);
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.sub-menu-2{
+    display: none;
+
+}
+
+.submenu:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -52px;
+    margin-left: 180px;
+    background:rgba(0, 0, 0, 0.5); 
+}
+
+.titulo-header{
+    margin: 250px 400px auto 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titulo-header h1{
+    text-align: center;
+    margin: 100px auto 50px auto;
+    font-size: 2em;
+    padding-top: 30px;
+    color: #fff;
+    
+}
+
+.titulo-header p{
+    display: block;
+    padding: 50px;
+    color: #fff;
+    font-size: 1.5em;
+    
+}
